@@ -1,7 +1,5 @@
-module.exports = {
-	name: 'ready',
-	once: true,
-	execute(client) {
-		console.log(`Ready! Logged in as ${client.user.tag}`);
-	},
+exports.name = 'ready';
+exports.fnc = function(client) {
+	console.log(`Ready! Logged in as ${client.user.tag}`);
+	return;
 };
