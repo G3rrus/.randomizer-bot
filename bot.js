@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+// import of valid token from YOUR discord dev application https://discord.com/developers/applications
 const { token } = require('./config.json');
 const events = require('./events');
 const cmds = require('./commands');

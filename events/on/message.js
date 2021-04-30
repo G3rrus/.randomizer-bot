@@ -1,3 +1,4 @@
+// import of command prefix of YOUR choice
 const { prefix } = require('../../config.json');
 const Discord = require('discord.js');
 
