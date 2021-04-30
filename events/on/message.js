@@ -3,22 +3,26 @@ const Discord = require('discord.js');
 
 exports.name = 'message';
 exports.fnc = function(message, client) {
-	if (!message.content.startsWith(prefix) || message.author.bot) return;
+	if (!message.content.startsWith(prefix) || message.content === prefix || message.author.bot) return;
 
-	const mssgCnt = message.content;
+	const mssgCnt = message.content.slice(prefix.length, message.content.length);
 	const firstSpace = mssgCnt.indexOf(' ');
-	if (firstSpace === -1) return;
 
-	const commandName = mssgCnt.slice(prefix.length, firstSpace).toLowerCase();
-	const cmdArgs = mssgCnt
-		// exlude command itself.
-		.slice(firstSpace, mssgCnt.length)
-		// split at commas.
-		.split(/,+ */)
-		// kill whitespace around elemts.
-		.map(function(item) {return item.trim();})
-		// kill potential empty str.
-		.filter(function(item) {return item !== '';});
+	let cmdArgs;
+	let commandName = mssgCnt.trim().toLowerCase();
+
+	if (firstSpace !== -1) {
+		commandName = commandName.slice(0, firstSpace);
+		cmdArgs = mssgCnt
+			// exlude command itself.
+			.slice(firstSpace, mssgCnt.length)
+			// split at commas.
+			.split(/,+ */)
+			// kill whitespace around elemts.
+			.map(function(item) {return item.trim();})
+			// kill potential empty str.
+			.filter(function(item) {return item !== '';});
+	}
 
 	// either command is found in commands or its an alias found in any cmd.
 	const command = client.commands.get(commandName)

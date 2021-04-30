@@ -7,6 +7,8 @@ exports.usage = '[Command usage #1]\n[Command usage #2]';
 exports.cooldown = 5;
 
 const cmdFnc = function(message, args) {
+	if (!args) return message.channel.send('No parameter was given!');
+
 	if (args.length < 2) {
 		return message.channel.send('Not enough entries to make a random choice!');
 	}

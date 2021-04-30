@@ -7,6 +7,8 @@ exports.usage = '[Command usage #1]\n[Command usage #2]';
 exports.cooldown = 5;
 
 const cmdFnc = function(message, args) {
+	if (!args) return message.channel.send('No parameter was given!');
+
 	const max = parseInt(args[0], 10);
 	if (isNaN(max) || max < 1 || max > Number.MAX_SAFE_INTEGER) {
 		return message.channel.send('Sorry that is not a valid parameter for a dice roll!');
