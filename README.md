@@ -9,9 +9,6 @@
 	<a href="https://github.com/G3rrus/.randomizer-bot/issues">
 		<img src="https://img.shields.io/github/issues-raw/G3rrus/.randomizer-bot.svg?style=flat-square&label=Issues" alt="G3-Bot Issues">
 	</a>
-	<a href="https://github.com/G3rrus/.randomizer-bot/releases">
-		<img src="https://img.shields.io/github/downloads/G3rrus/.randomizer-bot/total.svg?style=flat-square&label=Downloads" alt="G3-Bot Downloads">
-	</a>
 	<a href="https://github.com/G3rrus/.randomizer-bot/blob/main/LICENSE">
 		<img src="https://img.shields.io/badge/License-GPLv3-red.svg?style=flat-square" alt="G3-Bot License">
 	</a>
