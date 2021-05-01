@@ -1,4 +1,21 @@
-# School Project Discord Bot
+<p align="center">
+	<img src="https://repository-images.githubusercontent.com/361565580/72fe4100-aab5-11eb-82c9-efd79c63c64e" width="768">
+</p>
+
+<p align="center">
+	<a href="https://github.com/G3rrus/.randomizer-bot/releases/latest">
+		<img src="https://img.shields.io/badge/Version-1.0.0-blue.svg?style=flat-square" alt="G3-Bot Version">
+	</a>
+	<a href="https://github.com/G3rrus/.randomizer-bot/issues">
+		<img src="https://img.shields.io/github/issues-raw/G3rrus/.randomizer-bot.svg?style=flat-square&label=Issues" alt="G3-Bot Issues">
+	</a>
+	<a href="https://github.com/G3rrus/.randomizer-bot/releases">
+		<img src="https://img.shields.io/github/downloads/G3rrus/.randomizer-bot/total.svg?style=flat-square&label=Downloads" alt="G3-Bot Downloads">
+	</a>
+	<a href="https://github.com/G3rrus/.randomizer-bot/blob/main/LICENSE">
+		<img src="https://img.shields.io/badge/License-GPLv3-red.svg?style=flat-square" alt="G3-Bot License">
+	</a>
+</p>
 
 ## Summary
 This Bot is just a small school project I've been throwing together on a rainy weekend day. It's main features are 3 commands that work with randomization and 1 helper command that is supposed
